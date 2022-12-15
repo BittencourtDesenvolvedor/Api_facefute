@@ -1,0 +1,29 @@
+{
+  "name": "facefute",
+  "version": "1.0.0",
+  "description": "Um aplicativo para jogadores, times e quadras de futebol amador ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "futebol",
+    "fute7",
+    "equipes de futebol",
+    "quadras e futebol"
+  ],
+  "author": "Roberto Bittencourt",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.3.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3"
+  }
+}

@@ -29,7 +29,34 @@ const validarUsuario = () => {
     ]
 }
 
+const validarLogin = () => {
+    return [
+        body("email")
+        .isString()
+        .withMessage("O e-mail é obrigatório.")
+        .isEmail()
+        .withMessage("Insira um e-mail válido."),
+        body("password")
+        .isString()
+        .withMessage("A senha é obrigatória."),
+    ] 
+}
+
+const atualizarUser = () => {
+    return [
+        body("name")
+        .optional()
+        .isLength({min: 3})
+        .withMessage("O Nome precisa ter no mínimo 3 caracteres."),
+    body("password")
+        .optional()
+        .isLength({min: 6})
+        .withMessage("A senha precisa ter no mínimo 6 caracteres."), 
+    
+    ]
+}
+
 
 module.exports = {
-    validarUsuario,
+    validarUsuario, validarLogin,atualizarUser,
 }
